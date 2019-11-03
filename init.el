@@ -26,7 +26,7 @@ There are two things you can do about this warning:
     ("a24c5b3c12d147da6cef80938dca1223b7c7f70f2f382b26308eba014dc4833a" "a7051d761a713aaf5b893c90eaba27463c791cd75d7257d3a8e66b0c8c346e77" default)))
  '(package-selected-packages
    (quote
-    (flycheck-rust flycheck json-mode flymake-json tss tide material-theme zenburn-theme ac-js2 auto-complete projectile helm js2-mode cargo rust-mode))))
+    (dumb-jump magit company flycheck-rust flycheck json-mode flymake-json tss tide material-theme zenburn-theme ac-js2 auto-complete projectile helm js2-mode cargo rust-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -73,3 +73,4 @@ There are two things you can do about this warning:
 
 (add-hook 'typescript-mode-hook #'setup-tide-mode)
 (add-hook 'json-mode #'flycheck-mode)
+(dumb-jump-mode)
