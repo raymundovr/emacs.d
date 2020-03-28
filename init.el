@@ -84,7 +84,7 @@ There are two things you can do about this warning:
 (require 'vue-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
 
-(load-theme 'nord t)
+(load-theme 'base16-flat t)
 ;;(set-frame-parameter (selected-frame) 'alpha '(<active> . <inactive>))
 ;;(set-frame-parameter (selected-frame) 'alpha <both>)
 ;;(set-frame-parameter (selected-frame) 'alpha '(50 50))
@@ -96,3 +96,4 @@ There are two things you can do about this warning:
 
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 (setq tab-width 4)
+(tool-bar-mode -1)
