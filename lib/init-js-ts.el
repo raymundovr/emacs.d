@@ -29,5 +29,6 @@
 
 (add-hook 'typescript-mode-hook #'setup-tide-mode)
 (add-hook 'json-mode #'flycheck-mode)
+(add-to-list 'projectile-globally-ignored-files "*node_modules")
 
 (provide 'init-js-ts)

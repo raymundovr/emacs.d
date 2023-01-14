@@ -4,3 +4,6 @@ projectile-bookmarks.eld
 /elpa/
 /themes/
 network-security.data
+/rust-playgound/
+*.cache
+session*

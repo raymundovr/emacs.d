@@ -14,7 +14,7 @@
 
 ; list the packages you want
 (setq package-list
-    '(all-the-icons neotree base16-theme afternoon-theme ample-theme nord-theme company-racer racer markdown-mode+ vue-mode dumb-jump magit company flycheck-rust flycheck json-mode flymake-json tss tide material-theme zenburn-theme ac-js2 auto-complete projectile helm js2-mode cargo rust-mode rust-playground css-mode skewer-mode))
+    '(all-the-icons neotree base16-theme afternoon-theme ample-theme nord-theme company-racer racer markdown-mode+ vue-mode dumb-jump magit company flycheck-rust flycheck json-mode flymake-json tss tide material-theme zenburn-theme ac-js2 auto-complete projectile helm js2-mode cargo rust-mode rust-playground css-mode skewer-mode web-mode))
 
 
 ; activate all the packages

@@ -14,12 +14,30 @@
 
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 (setq tab-width 4)
+(setq js-indent-level 4)
 (tool-bar-mode -1)
 (electric-pair-mode +1)
 (dumb-jump-mode)
 (global-display-line-numbers-mode)
-(load-theme 'base16-horizon-dark t)
+(load-theme 'base16-railscasts t)
 ;; Born to be wild
 (setq make-backup-files nil)
+;; Load user path
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
+
+(set-frame-parameter (selected-frame) 'alpha '(97))
+(add-to-list 'default-frame-alist '(alpha . (97)))
+
+;; Show full path in window title
+(setq frame-title-format
+      '(buffer-file-name "%b - %f" ; File buffer
+        (dired-directory dired-directory ; Dired buffer
+         (revert-buffer-function "%b" ; Buffer Menu
+          ("%b - Dir: " default-directory))))) ; Plain buffer
+
+(require 'iedit)
+(require 'gitlab-ci-mode)
+(require 'gitlab-ci-mode-flycheck)
 
 (provide 'init-editor)
