@@ -1,7 +1,7 @@
 ;; Editor initialization
 
 (setq company-tooltip-align-annotations t)
-(require 'helm-config)
+;; (require 'helm-config)
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
@@ -19,7 +19,8 @@
 (electric-pair-mode +1)
 (dumb-jump-mode)
 (global-display-line-numbers-mode)
-(load-theme 'base16-railscasts t)
+;; (load-theme 'misterioso t)
+(load-theme 'doom-shades-of-purple t)
 ;; Born to be wild
 (setq make-backup-files nil)
 ;; Load user path
