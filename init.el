@@ -29,7 +29,7 @@ There are two things you can do about this warning:
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(doom-themes lsp-mode hydra gitlab-ci-mode gitlab-ci-mode-flycheck web-mode impatient-mode exec-path-from-shell rust-playground all-the-icons neotree base16-theme afternoon-theme ample-theme nord-theme company-racer racer markdown-mode+ dumb-jump magit company flycheck-rust flycheck json-mode flymake-json tss tide material-theme zenburn-theme ac-js2 auto-complete projectile helm js2-mode cargo rust-mode iedit gitlab-ci-mode gitlab-ci-mode-flycheck dap-mode typescript-mode tree-sitter tree-sitter-langs))
+   '(flycheck-gometalinter go-mode doom-themes lsp-mode hydra gitlab-ci-mode gitlab-ci-mode-flycheck web-mode impatient-mode exec-path-from-shell rust-playground all-the-icons neotree base16-theme afternoon-theme ample-theme nord-theme company-racer racer markdown-mode+ dumb-jump magit company flycheck-rust flycheck json-mode flymake-json tss tide material-theme zenburn-theme ac-js2 auto-complete projectile helm js2-mode cargo rust-mode iedit gitlab-ci-mode gitlab-ci-mode-flycheck dap-mode typescript-mode tree-sitter tree-sitter-langs))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -43,3 +43,4 @@ There are two things you can do about this warning:
 (require 'init-web)
 (require 'init-js-ts)
 (require 'init-rust)
+(require 'init-go)
