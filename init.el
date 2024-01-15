@@ -29,7 +29,7 @@ There are two things you can do about this warning:
  '(global-display-line-numbers-mode t)
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(flycheck-gometalinter go-mode doom-themes lsp-mode hydra gitlab-ci-mode gitlab-ci-mode-flycheck web-mode impatient-mode exec-path-from-shell rust-playground all-the-icons neotree base16-theme afternoon-theme ample-theme nord-theme company-racer racer markdown-mode+ dumb-jump magit company flycheck-rust flycheck json-mode flymake-json tss tide material-theme zenburn-theme ac-js2 auto-complete projectile helm js2-mode cargo rust-mode iedit gitlab-ci-mode gitlab-ci-mode-flycheck dap-mode typescript-mode tree-sitter tree-sitter-langs))
+   '(rustic toml-mode lsp-ui flycheck-gometalinter go-mode doom-themes lsp-mode hydra gitlab-ci-mode gitlab-ci-mode-flycheck web-mode impatient-mode exec-path-from-shell rust-playground all-the-icons neotree base16-theme afternoon-theme ample-theme nord-theme company-racer racer markdown-mode+ dumb-jump magit company flycheck-rust flycheck json-mode flymake-json tss tide material-theme zenburn-theme ac-js2 auto-complete projectile helm js2-mode cargo rust-mode iedit gitlab-ci-mode gitlab-ci-mode-flycheck dap-mode typescript-mode tree-sitter tree-sitter-langs))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -37,6 +37,8 @@ There are two things you can do about this warning:
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Menlo" :foundry "CTDB" :slant normal :weight normal :height 160 :width normal)))))
+
+(require 'use-package)
 
 (add-to-list 'load-path "~/.emacs.d/lib")
 (require 'init-editor)
