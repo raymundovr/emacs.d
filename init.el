@@ -38,7 +38,13 @@ There are two things you can do about this warning:
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Menlo" :foundry "CTDB" :slant normal :weight normal :height 160 :width normal)))))
 
-(require 'use-package)
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(eval-when-compile
+  (require 'use-package))
+(require 'bind-key)
+(setq use-package-always-ensure t)
 
 (add-to-list 'load-path "~/.emacs.d/lib")
 (require 'init-editor)
